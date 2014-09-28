@@ -1,5 +1,6 @@
 <!doctype html><html>
 <head>
+	<meta charset=utf-8>
 	<title>subtitle test</title>
 	<style type="text/css">
 body,html {
@@ -18,7 +19,10 @@ video {
 	</style>
 </head>
 <body>
-	<video autoplay controls src="http://a.pomf.se/3Qw3.mp4">
-		<track kind="subtitles" src="subs/subs.vtt" srclang="jp" label="DICKS" default>
+	<video preload="metadata" autoplay controls>
+		<source src="3Qw3.mp4">
+		<source src="3Qw3.webm">
+		<track label="English subtitles" kind="subtitles" srclang="en" src="subs.vtt" default>
+
 	</video>
 </body></html>
